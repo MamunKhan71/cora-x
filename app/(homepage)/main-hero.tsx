@@ -1,9 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { VideoText } from '@/components/magicui/video-text'
 const MainHero = () => {
     return (
         <div className="w-full h-screen flex items-center justify-center relative overflow-hidden">
+            <div className="relative h-[500px] w-full overflow-hidden z-20 px-32">
+                <VideoText src="/corabg2.mp4">KORA-X</VideoText>
+            </div>
             <div className="absolute inset-0 w-full h-full">
                 <video
                     className="w-full h-full object-cover opacity-40"
@@ -13,7 +17,7 @@ const MainHero = () => {
                     playsInline
                 >
                     <source
-                        src="/ai-bg.mp4"
+                        src="/ai-bg-2.mp4"
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -22,7 +26,7 @@ const MainHero = () => {
                     <div className="w-full h-full bg-[linear-gradient(rgba(16,185,129,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
                 </div>
                 {/* Enhanced overlays */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/90"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
             </div>
 
             <motion.div

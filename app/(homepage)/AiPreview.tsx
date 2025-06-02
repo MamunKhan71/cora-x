@@ -34,7 +34,7 @@ const AiPreview = () => {
                     transition={{ duration: 0.8 }}
                     className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent"
                 >
-                    About CoraX AI
+                    About KoraX AI
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
