@@ -47,7 +47,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div className="w-full bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+        <div className="w-full bg-gradient-to-b from-black to-black relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.1),transparent_70%)]"></div>

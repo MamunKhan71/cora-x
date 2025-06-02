@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import CreativeFooter from "@/components/footer";
 export const metadata: Metadata = {
   title: "Acote AI",
   description: "Next-generation AI solutions for the modern enterprise",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "Acote AI",
     images: [
       {
-        url: "https://acote-ai.com/og-image.png", 
+        url: "https://acote-ai.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Acote AI OG Image",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acote AI",
     description: "Next-generation AI solutions for the modern enterprise",
-    images: ["https://acote-ai.com/og-image.png"], 
+    images: ["https://acote-ai.com/og-image.png"],
     creator: "@your_twitter_handle",
   },
 };
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         {children}
+        <CreativeFooter />
         <ScrollProgress />
       </body>
     </html>

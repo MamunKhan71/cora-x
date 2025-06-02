@@ -86,7 +86,7 @@ export default function ProductShowcase() {
         <div className="w-full bg-black relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.1),transparent_70%)]"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.1),transparent_40%)]"></div>
 
                 {/* Floating particles */}
                 {[...Array(30)].map((_, i) => (
@@ -111,7 +111,7 @@ export default function ProductShowcase() {
                 ))}
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 py-24 relative z-10 min-h-screen">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
