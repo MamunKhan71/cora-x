@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 export const metadata: Metadata = {
   title: "Acote AI",
   description: "Next-generation AI solutions for the modern enterprise",
@@ -45,6 +45,7 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         {children}
+        <ScrollProgress />
       </body>
     </html>
   );
